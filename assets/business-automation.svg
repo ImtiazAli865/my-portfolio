@@ -1,0 +1,58 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c1230"/>
+      <stop offset="100%" stop-color="#13243a"/>
+    </linearGradient>
+    <linearGradient id="acc3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <filter id="glow2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg2)"/>
+  <circle cx="90" cy="90" r="80" fill="#06b6d4" opacity="0.12"/>
+  <circle cx="520" cy="320" r="90" fill="#a855f7" opacity="0.13"/>
+
+  <!-- connecting lines -->
+  <g stroke="url(#acc3)" stroke-width="2" fill="none" opacity="0.7">
+    <path d="M150 120 L260 90"/>
+    <path d="M150 120 L240 200"/>
+    <path d="M260 90 L380 130"/>
+    <path d="M240 200 L380 130"/>
+    <path d="M240 200 L320 290"/>
+    <path d="M380 130 L470 180"/>
+    <path d="M320 290 L470 180"/>
+    <path d="M470 180 L470 270"/>
+  </g>
+
+  <!-- nodes -->
+  <g filter="url(#glow2)">
+    <circle cx="150" cy="120" r="22" fill="#0c1230" stroke="#06b6d4" stroke-width="2"/>
+    <circle cx="260" cy="90" r="16" fill="#0c1230" stroke="#3b82f6" stroke-width="2"/>
+    <circle cx="240" cy="200" r="26" fill="#0c1230" stroke="#a855f7" stroke-width="2.5"/>
+    <circle cx="380" cy="130" r="18" fill="#0c1230" stroke="#06b6d4" stroke-width="2"/>
+    <circle cx="320" cy="290" r="20" fill="#0c1230" stroke="#7c3aed" stroke-width="2"/>
+    <circle cx="470" cy="180" r="24" fill="#0c1230" stroke="#06b6d4" stroke-width="2.5"/>
+    <circle cx="470" cy="270" r="14" fill="#0c1230" stroke="#3b82f6" stroke-width="2"/>
+  </g>
+
+  <!-- gear icon centered on main node -->
+  <g transform="translate(240,200)" fill="#ffffff" opacity="0.9">
+    <circle r="9" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <g stroke="#ffffff" stroke-width="2">
+      <line x1="0" y1="-14" x2="0" y2="-9"/>
+      <line x1="0" y1="14" x2="0" y2="9"/>
+      <line x1="-14" y1="0" x2="-9" y2="0"/>
+      <line x1="14" y1="0" x2="9" y2="0"/>
+      <line x1="-10" y1="-10" x2="-6" y2="-6"/>
+      <line x1="10" y1="10" x2="6" y2="6"/>
+      <line x1="-10" y1="10" x2="-6" y2="6"/>
+      <line x1="10" y1="-10" x2="6" y2="-6"/>
+    </g>
+  </g>
+
+  <!-- pulse dots traveling along lines -->
+  <circle cx="200" cy="105" r="4" fill="#fff" opacity="0.9"/>
+  <circle cx="430" cy="155" r="4" fill="#fff" opacity="0.9"/>
+</svg>

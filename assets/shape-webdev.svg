@@ -1,0 +1,32 @@
+<svg width="440" height="440" viewBox="0 0 440 440" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardbg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e1c2c"/>
+      <stop offset="100%" stop-color="#0a0e1f"/>
+    </linearGradient>
+    <linearGradient id="glow2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#67e8f9"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <filter id="blur2" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <filter id="softblur2" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+  </defs>
+  <rect width="440" height="440" rx="28" fill="url(#cardbg2)"/>
+  <circle cx="330" cy="110" r="90" fill="#06b6d4" opacity="0.16" filter="url(#softblur2)"/>
+  <circle cx="90" cy="340" r="80" fill="#3b82f6" opacity="0.13" filter="url(#softblur2)"/>
+
+  <polygon points="220,90 130,235 220,395" fill="#0e2233" stroke="#163349" stroke-width="1"/>
+  <polygon points="220,90 220,395 310,235" fill="#143246" stroke="#1d4259" stroke-width="1"/>
+  <polygon points="220,90 130,235 175,200" fill="#173a52" opacity="0.7"/>
+  <polygon points="220,90 310,235 262,195" fill="#1d4259" opacity="0.6"/>
+
+  <line x1="220" y1="90" x2="220" y2="395" stroke="url(#glow2)" stroke-width="3" filter="url(#blur2)"/>
+  <line x1="220" y1="90" x2="220" y2="395" stroke="#bdf3fb" stroke-width="1.4"/>
+
+  <circle cx="220" cy="90" r="4" fill="#bdf3fb"/>
+  <circle cx="220" cy="395" r="4" fill="#06b6d4"/>
+</svg>
